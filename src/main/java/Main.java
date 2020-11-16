@@ -1,8 +1,6 @@
 package main.java;
 
-import main.java.vo.Animal;
-import main.java.vo.Automovel;
-import main.java.vo.Pessoa;
+import main.java.vo.*;
 
 import java.util.Date;
 
@@ -43,5 +41,18 @@ public class Main {
         an.setDataNascimento(new Date(2020,11,16));
 
         System.out.println(an);
+
+        Funcionario f = new Funcionario();
+
+        f.setNome("Teste Funcionário");
+        f.setCargo("Dev");
+        System.out.println(f.getNome() + " tem o cargo de " + f.getCargo());
+
+        Cliente c = new Cliente();
+
+        c.setNome("Cliente Teste");
+        c.setIdCliente("FJK5632L");
+        System.out.println("O código do Cliente" + c.getNome() + " é: " + c.getIdCliente());
+
     }
 }
